@@ -1,0 +1,27 @@
+main {
+    /* row-gap: 5rem; */
+    border-inline-style: solid;
+    border-color: var(--primary-5);
+    border-width: 1px;
+}
+
+.cards-nav {
+    border-top-style: solid;
+    border-color: var(--primary-5);
+    border-width: 1px;
+    padding-inline: 2rem;
+    height: 4.6875rem;
+
+}
+
+.cards-nav button {
+    font-size: 1.125rem;
+    background: none;
+    border-style: none;
+    text-transform: uppercase;
+    color: var(--primary-2);
+}
+
+.cards-nav button:hover {
+    cursor: pointer;
+}

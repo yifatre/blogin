@@ -1,0 +1,44 @@
+/* lato */
+@font-face {
+  font-family: Lato;
+  src: url(../../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../../fonts/Lato-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Eurof;
+  src: url(../../fonts/eurof55.ttf);
+}
+
+
+@font-face {
+  font-family: Brands;
+  src: url(../../fonts/fa-brands-400.ttf);
+}
+
+/* fon awsome */
+
+.fa::before {
+  font-family: Brands;
+}
+
+.fa.facebook::before {
+  content: "\f082";
+}
+
+.fa.twitter::before {
+  content: "\f081";
+}
+
+.fa.behance::before {
+  content: "\f1b5";
+}
+
+.fa.dribbble::before {
+  content: "\f397";
+}

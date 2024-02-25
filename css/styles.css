@@ -1,0 +1,23 @@
+/* SETUP */
+@import url(setup/typography.css);
+@import url(setup/vars.css);
+
+/* BASICS */
+@import url(basics/helpers.css);
+@import url(basics/layout.css);
+@import url(basics/base.css);
+
+
+/* COMPONENTS */
+@import url(components/main-header.css);
+@import url(components/main.css);
+@import url(components/card.css);
+@import url(components/logo.css);
+@import url(components/main-footer.css);
+@import url(components/join-modal.css);
+
+
+
+/* media queries */
+@import url(setup/mq.css);
+

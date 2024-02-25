@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2,
+h4 {
+    margin: 0;
+    line-height: 1.071428;
+}
+
+p {
+    margin: 0;
+}

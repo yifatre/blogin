@@ -1,0 +1,35 @@
+.read-more{
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.read-more::backdrop{
+    background-color: #b9b9b9b2;
+}
+
+.read-more>form {
+    gap: 0.5rem;
+}
+
+.read-more>form>* {
+    grid-column: span 2;
+}
+
+.read-more>form>button {
+    grid-column: span 1;
+    display: inline;
+    padding: 0.3rem;
+    width: fit-content;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
+.read-more>form>button:first-of-type{
+    justify-self: end;
+}
+
+.read-more>form>button:hover{
+    cursor: pointer;
+    color: var(--secondary-base);
+}

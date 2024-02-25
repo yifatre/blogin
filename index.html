@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="main-layout grid">
+    <header class="main-header full-width grid main-layout">
+        <div class="grid-middle-col flex  align-center">
+            <div class="logo flex align-center">Blogin<span class="dot">.</span></div>
+            <nav class="main-nav">
+                <ul class="nav-list flex align-center clean-list">
+                    <li><a class="flex align-center justify-center current" href="#">Journal</a></li>
+                    <li><a class="flex align-center justify-center" href="#">About</a></li>
+                    <li><a class="flex align-center justify-center" href="#">Work</a></li>
+                    <li><a class="flex align-center justify-center" href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button onclick="toggleNav(this)" class="hamburger">≡</button>
+        </div>
+    </header>
+    <main class="grid grid-middle-col">
+        <article class="card grid card-layout">
+            <img src="img/1.png" alt="">
+            <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+            <div class="paras">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+            </div>
+            <button onclick="readMore()" class="continue arrow">Continue Reading</button>
+        </article>
+        <article class="card grid card-layout">
+            <img src="img/2.png" alt="">
+            <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+            <div class="paras">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+            </div>
+            <button onclick="readMore()" class="continue arrow">Continue Reading</button>
+        </article>
+        <article class="card grid card-layout">
+            <img src="img/3.png" alt="">
+            <h2>Duis aute irure dolor in henderit in voluptate.</h2>
+            <div class="paras">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+            </div>
+            <button onclick="readMore()" class="continue arrow">Continue Reading</button>
+        </article>
+        <nav class="cards-nav flex space-between">
+            <button>← Previous</button>
+            <button>Next →</button>
+        </nav>
+    </main>
+
+    <dialog class="read-more">
+        <form method="dialog" class="grid">
+            <h3>Join us to get access to the latest stories!</h3>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <button>Join!</button>
+            <button>✕</button>
+        </form>
+    </dialog>
+
+    <footer class="main-footer full-width grid main-layout">
+        <div class="logo grid-middle-col">Blogin<span class="dot">.</span></div>
+        <p class="grid-middle-col">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+            <span>Pixelhint.com</span>
+        </p>
+        <ul class="socials flex align-center justify-center grid-middle-col clean-list">
+            <li class="social fa facebook"></li>
+            <li class="social fa twitter"></li>
+            <li class="social fa behance"></li>
+            <li class="social fa dribbble"></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleNav(elBtn) {
+            document.body.classList.toggle('nav-open')
+            elBtn.innerText = elBtn.innerText==='≡' ? '✕' : '≡'
+        }
+
+        function readMore(){
+            document.querySelector('.read-more').showModal()
+        }
+    </script>
+</body>
+
+</html>

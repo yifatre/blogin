@@ -1,0 +1,7 @@
+.main-layout {
+    grid-template-columns: 0 100% 0;
+}
+
+.card-layout {
+    grid-template-columns: 1fr;
+}
